@@ -1,0 +1,32 @@
+{
+  "name": "timebox-server",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/app.js",
+  "scripts": {
+    "start": "tsc && node ./dist/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marat-curious/timebox-server.git"
+  },
+  "author": "Marat <marat.curious@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marat-curious/timebox-server/issues"
+  },
+  "homepage": "https://github.com/marat-curious/timebox-server#readme",
+  "devDependencies": {
+    "@types/koa": "^2.0.48",
+    "@types/koa-router": "^7.0.39",
+    "@types/node": "^11.9.0",
+    "@types/pg": "^7.4.11",
+    "typescript": "^3.3.3"
+  },
+  "dependencies": {
+    "koa": "^2.7.0",
+    "koa-router": "^7.4.0",
+    "pg": "^7.8.0"
+  }
+}
