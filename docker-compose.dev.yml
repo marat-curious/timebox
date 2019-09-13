@@ -1,12 +1,15 @@
 version: "3.5"
 services:
   node:
-    build: .
+    build: ./server
     ports:
       - "3003:${APP_PORT}"
+    volumes:
+      - ./server:/usr/src/app
     depends_on:
       - postgres
     environment:
+      - NODE_ENV=development
       - APP_PORT=$APP_PORT
       - POSTGRES_DB=$POSTGRES_DB
       - POSTGRES_HOST=postgres
